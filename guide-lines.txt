@@ -1,0 +1,68 @@
+#  FOLDER STRUCTURE
+/
+├── index.html          # Main HTML file
+├── styles/            # CSS folder
+│   ├── main.css       # Global styles
+│   ├── header.css     # Header styles
+│   └── footer.css     # Footer styles
+├── assets/            # Resources
+│   ├── images/        # Image files
+│   └── icons/         # Icon files
+└── README.md          # Project documentation
+
+
+## NAMING CONVENTIONS
+
+### FILES & FOLDERS
+• All lowercase letters
+• kebab-case (hyphens between words)
+• Examples:
+  - HTML files: `about-us.html`
+  - CSS files: `main-header.css`
+  - Images: `company-logo.png`
+  - Folders: `assets/images/`
+
+### HTML
+• Classes: `main-nav`
+• IDs: `contact-form`
+
+## COLORS & FONTS 
+### COLOR PALETTE
+• Dark BG (hero/footer): `#1F2937`
+• Button/CTA BG: `#3882F6`
+• Quote section BG: `#E5E7EB`
+
+### TEXT COLORS
+• Hero main text: `#F9FAF8`
+• Hero secondary/header links: `#E5E7EB`
+• Header logo: `#F9FAF8`
+• Info header: `#1F2937`
+• Quote text: `#1F2937`
+
+### TYPOGRAPHY (Roboto)
+• Hero main: `48px extra-bold` (#F9FAF8)
+• Hero secondary/header links: `18px` (#E5E7EB)
+• Header logo: `24px` (#F9FAF8)
+• Info header: `36px extra-bold` (#1F2937)
+• Quote text: `36px light italic` (#1F2937)
+
+###  WEIGHT SCALE
+• Regular (normal text): `400`
+• Bold (standard bold): `700`
+• Extra-bold (hero/main headers): `800` ← "extra-bold" in assignment
+• Light (quote text): `300`
+
+### WHERE TO USE EACH
+1. `800 (extra-bold)`:
+   - Hero main text: "This website is awesome"
+   - Information header: "Some random information"
+
+2. `300 (light) + italic`:
+   - Quote text: "This is an inspiring quote..."
+
+3. `400 (regular)`:
+   - Default text 
+
+4. `700 (bold)`:
+   - Buttons ("Sign up")
+   - Call-to-action text
