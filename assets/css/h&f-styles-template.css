@@ -79,6 +79,33 @@ nav {
     animation: fade-in 0.5s ease forwards;
 }
 
+.festival-menu {
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100px;
+    background-color: #4d5f79;
+    border-radius: 5px;
+    padding: 10px;
+    opacity: 0;
+}
+
+.festival-menu a {
+    margin: 5px 0;
+    display: block;
+}
+
+.festival-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.festival-dropdown:hover .festival-menu {
+    display: block;
+    animation: fade-in 0.5s ease forwards;
+}
+
 main {
     flex: 1;
 }

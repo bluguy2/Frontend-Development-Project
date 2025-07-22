@@ -1,0 +1,80 @@
+@import url("./h&f-styles-template.css");
+
+body{overflow-x: hidden;
+font-family: "roboto";}
+
+main{    
+    margin: 2rem;;
+}
+
+
+p   {
+	max-width: 100%;
+    text-align: left;
+    height: auto;
+    display: block;
+    margin: 1rem auto;  
+    margin-bottom: 1em;    
+}
+
+.section-1 .fest-heading {
+	text-align: center;
+	font-size: 3em;
+	justify-content: center;
+	padding-bottom: 20px;
+}
+
+.para-section {
+  display: flex;
+  padding-left: 65px;
+  padding-right: 65px;
+}
+
+img {
+  width: 600px;
+  height: 400px;
+  align-items: center;
+}
+
+.fest-text1 {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.fest-text2 {
+  font-size: 20px;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+
+footer {
+    padding-left: 50%;
+}
+
+
+@media (max-width: 1200px) {
+   .para-section {
+	   position: relative;
+       display: inline-block;
+   }
+   
+   .fest-text1 .fest-text2{
+     flex-direction: row;
+}
+   
+   
+  .para-section img {
+    height: 450px;
+	width: 600px;
+    margin: 2rem auto;
+	display: block;
+  }
+  
+  .para-section p {
+	padding-top: 80px;
+    max-width: 90%;
+    padding: 0 1rem;
+  }
+}
+
