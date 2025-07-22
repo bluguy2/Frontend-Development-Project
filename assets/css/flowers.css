@@ -1,88 +1,96 @@
 @import url("./h&f-styles-template.css");
 
-body{overflow-x: hidden;
-font-family: "roboto";}
+body {
+  overflow-x: hidden;
+  font-family: "roboto";
+  margin: 0;
+}
 
-main{    
-    margin: 2rem;;
+main {
+  margin: 2rem;
+  ;
 }
 
 /* images */
-figure img, figure img {
-    max-width: 100%;
-    width: 500px;
-    height: 500px;
-    /* height: auto; */
-    display:block;
-    margin: 5rem auto;
-    object-fit: cover;
-    border-radius: 10px;
+figure img,
+figure img {
+  max-width: 100%;
+  width: 500px;
+  height: 500px;
+  display: block;
+  margin: 5rem auto;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-figcaption{
-    text-align: center;
-    margin: -4rem 0;
+figcaption {
+  text-align: center;
+  margin: -4rem 0;
 }
 
 /* text */
-p{max-width: 100%;
-text-align: center;
-height: auto;
-display: block;
-margin: 1rem auto; 
+p {
+  max-width: 100%;
+  text-align: center;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
 
-line-height: 2;      
-  margin-bottom: 1em;    
-  max-width: 600px; 
+  line-height: 2;
+  margin-bottom: 1em;
+  max-width: 600px;
 }
 
-p .text-one{
-    margin-bottom: 1rem;
+p .text-one {
+  margin-bottom: 1rem;
 }
 
 /* grid */
-.grid{
-    display: grid;
-    grid-template-areas: "title title"
+.grid {
+  display: grid;
+  grid-template-areas: "title title"
     "text-one image-one "
     "image-two  text-two"
     "footer footer";
 
-    grid-template-rows: auto 1fr 1fr auto;
-    grid-template-columns: 1fr  1fr;
+  grid-template-rows: auto 1fr 1fr auto;
+  grid-template-columns: 1fr 1fr;
 }
 
-.grid .title{
-    grid-area: title;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.grid .title {
+  grid-area: title;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  text-shadow: 6px 5px 6px #727d8c;
 }
 
-.grid .image-one{
-    grid-area: image-one;
+.grid .image-one {
+  grid-area: image-one;
 }
 
-.grid .text-one{
-    grid-area: text-one;
-}
-.grid .image-two{
-    grid-area: image-two;
+.grid .text-one {
+  grid-area: text-one;
 }
 
-.grid .text-two{
-    grid-area: text-two;
+.grid .image-two {
+  grid-area: image-two;
 }
 
- footer{
-    grid-area: footer;
+.grid .text-two {
+  grid-area: text-two;
+}
+
+footer {
+  grid-area: footer;
 }
 
 /* other */
-hr{
-    border: none;
-    height: 3px;
-    background-image: linear-gradient(#1F2937, #E5E7EB);
+hr {
+  border: none;
+  height: 3px;
+  background-image: linear-gradient(#1F2937, #E5E7EB);
 
 }
 
@@ -107,7 +115,7 @@ hr{
     margin: 2rem auto;
     object-fit: contain;
   }
-  
+
   figcaption {
     margin: 1rem auto;
   }
@@ -116,10 +124,18 @@ hr{
     max-width: 90%;
     padding: 0 1rem;
   }
-  
+
   .grid .text-one,
   .grid .text-two {
     padding: 0 1rem;
     margin: 1rem 0;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .animation {
+    display: none;
   }
 }
