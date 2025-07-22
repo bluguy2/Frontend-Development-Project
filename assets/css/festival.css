@@ -1,7 +1,10 @@
 @import url("./h&f-styles-template.css");
 
-body{overflow-x: hidden;
-font-family: "roboto";}
+body {
+	overflow-x: hidden;
+    font-family: "roboto";
+	margin: 0;
+}
 
 main{    
     margin: 2rem;;
@@ -22,6 +25,7 @@ p   {
 	font-size: 3em;
 	justify-content: center;
 	padding-bottom: 20px;
+	text-shadow: 6px 5px 6px #727d8c;
 }
 
 .para-section {
