@@ -8,11 +8,11 @@ main{
 }
 
 /* images */
-.image-one img, .image-two img {
+figure img, figure img {
     max-width: 100%;
     width: 500px;
     height: 500px;
-    height: auto;
+    /* height: auto; */
     display:block;
     margin: 5rem auto;
     object-fit: cover;
@@ -79,10 +79,47 @@ p .text-one{
 }
 
 /* other */
-
 hr{
     border: none;
     height: 3px;
     background-image: linear-gradient(#1F2937, #E5E7EB);
 
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-areas:
+      "title"
+      "image-one"
+      "text-one"
+      "image-two"
+      "text-two"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  figure img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 2rem auto;
+    object-fit: contain;
+  }
+  
+  figcaption {
+    margin: 1rem auto;
+  }
+
+  p {
+    max-width: 90%;
+    padding: 0 1rem;
+  }
+  
+  .grid .text-one,
+  .grid .text-two {
+    padding: 0 1rem;
+    margin: 1rem 0;
+  }
 }
