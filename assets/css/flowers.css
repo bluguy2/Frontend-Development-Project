@@ -12,7 +12,6 @@ figure img, figure img {
     max-width: 100%;
     width: 500px;
     height: 500px;
-    /* height: auto; */
     display:block;
     margin: 5rem auto;
     object-fit: cover;
@@ -25,13 +24,14 @@ figcaption{
 }
 
 /* text */
-p{max-width: 100%;
-text-align: center;
-height: auto;
-display: block;
-margin: 1rem auto; 
+p{
+  max-width: 100%;
+  text-align: center;
+  height: auto;
+  display: block;
+  margin: 1rem auto; 
 
-line-height: 2;      
+  line-height: 2;      
   margin-bottom: 1em;    
   max-width: 600px; 
 }
@@ -57,7 +57,9 @@ p .text-one{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    font-size: 3rem;    
+    text-shadow: 6px 5px 6px #727d8c;
+  }
 
 .grid .image-one{
     grid-area: image-one;
@@ -122,4 +124,13 @@ hr{
     padding: 0 1rem;
     margin: 1rem 0;
   }
+
+  hr{
+    display: none;
+  }
+
+  .animation{
+    display: none;
+  }
 }
+
