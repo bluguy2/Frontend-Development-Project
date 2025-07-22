@@ -1,14 +1,15 @@
 #  FOLDER STRUCTURE
 /
-├── index.html          # Main HTML file
-├── styles/            # CSS folder
-│   ├── main.css       # Global styles
-│   ├── header.css     # Header styles
-│   └── footer.css     # Footer styles
-├── assets/            # Resources
-│   ├── images/        # Image files
-│   └── icons/         # Icon files
-└── README.md          # Project documentation
+├── index.html                  # Main HTML file
+├── styles/                     # CSS folder
+│   ├── main.css                # Global styles
+│   ├── h&f-styles-template.css     # Header styles
+│   
+├── assets/                     # Resources
+│   ├── images/                 # Image files
+│   ├── fonts/                  # font files
+│   └── icons/                  # Icon files
+└── README.md                   # Project documentation
 
 
 ## NAMING CONVENTIONS

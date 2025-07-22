@@ -1,0 +1,143 @@
+@import url(./h&f-styles-template.css);
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-extra-bold';
+    src: url(../fonts/Roboto-ExtraBold.ttf) format('truetype'); 
+}
+
+@font-face {
+    font-family: 'Roboto-light-italic';
+    src: url(../fonts/Roboto-LightItalic.ttf) format('truetype'); 
+}
+
+
+* {
+    text-decoration: none;
+    margin: 0;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 150px;
+}
+
+img {
+    max-width: 100%;
+}
+
+p, a {
+    font-family: 'Roboto';
+    font-size: 18px;
+}
+
+h2, h3, h4 {
+    font-family: 'Roboto-extra-bold';
+}
+
+.header-bot-container {
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-bot-text-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.header-bot-text-content h2 {
+    color: #f9faf8;
+    font-size: 48px;
+}
+
+.header-bot-text-content p, 
+.subscription h4,
+.subscription p 
+{
+    color: #e5e7eb;
+}
+
+.header-bot-text-content a {
+    background-color: #3882f6;
+    text-align: center;
+    width: 150px;
+}
+
+main h3, main blockquote {
+    color: #1f2937;
+    font-size: 36px;
+}
+
+main h3 {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.flower-images {
+    display: flex;
+    justify-content: space-around;
+}
+.flower-images img {
+    height: 250px;
+}
+
+.flower-image-wrapper {
+    width: 250px;
+}
+
+.flower-image-wrapper p {
+    text-align: center;
+}
+
+.flower-quote {
+    background-color: #e5e7eb;
+    margin: 40px 0;
+    padding: 60px 0;
+}
+
+.flower-quote blockquote {
+    font-family: 'Roboto-light-italic';
+    text-align: center;
+    width: 1200px;
+}
+
+.flower-quote footer {
+    background-color: transparent;
+    text-align: end;
+    font-weight: 900;
+}
+
+.subscription-wrapper {
+    background-color: #3882f6;
+    width: 800px;
+    margin: 50px auto;
+    border-radius: 5px;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscription h4 {
+    font-size: 24px;
+}
+
+.subscription-wrapper a {
+    color: #e5e7eb;
+    border: 1px solid #e5e7eb;
+    border-radius: 5px;
+    padding: 7px 10px;
+}
+
+.subscription-wrapper a:hover {
+    background-color: rgb(174, 172, 29);
+}
