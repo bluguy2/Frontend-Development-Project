@@ -6,11 +6,6 @@ body {
 	margin: 0;
 }
 
-main{    
-    margin: 2rem;;
-}
-
-
 p   {
 	max-width: 100%;
     text-align: left;
@@ -34,10 +29,26 @@ p   {
   padding-right: 65px;
 }
 
+.para-section-1 {
+  display: flex;
+  padding-left: 65px;
+  padding-right: 65px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #e5e7eb;
+  margin: 40px 0;
+}
+
 img {
   width: 600px;
   height: 400px;
   align-items: center;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.para-section-1 img {
+	padding-top: 10px;
 }
 
 .fest-text1 {
@@ -63,19 +74,40 @@ footer {
        display: inline-block;
    }
    
+   .para-section-1 {
+     position: relative;
+     display: inline-block;
+     background-color: #e5e7eb;
+	 margin: 40px 0;
+}
+   
    .fest-text1 .fest-text2{
      flex-direction: row;
 }
    
    
   .para-section img {
-    height: 450px;
 	width: 600px;
     margin: 2rem auto;
 	display: block;
+	object-fit: contain;
+	border-radius: 10px;
   }
   
   .para-section p {
+	padding-top: 80px;
+    max-width: 90%;
+    padding: 0 1rem;
+  }
+  
+  .para-section-1 img {
+	width: 600px;
+    margin: 2rem auto;
+	display: block;
+	object-fit: contain;
+  }
+  
+  .para-section-1 p {
 	padding-top: 80px;
     max-width: 90%;
     padding: 0 1rem;
