@@ -1,235 +1,235 @@
 @import url(./h&f-styles-template.css);
 
 @font-face {
-    font-family: 'Roboto';
-    src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: 'Roboto-extra-bold';
-    src: url(../fonts/Roboto-ExtraBold.ttf) format('truetype'); 
+  font-family: "Roboto-extra-bold";
+  src: url(../fonts/Roboto-ExtraBold.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: 'Roboto-light-italic';
-    src: url(../fonts/Roboto-LightItalic.ttf) format('truetype'); 
+  font-family: "Roboto-light-italic";
+  src: url(../fonts/Roboto-LightItalic.ttf) format("truetype");
 }
-
 
 * {
-    margin: 0;
-
-     box-sizing: border-box;
+  margin: 0;
+  /* 
+     box-sizing: border-box; */
 }
 
 .container {
-    /* box-sizing: border-box; */
-    /* max-width: 1920px; */
-    margin: 0 auto;
-    padding: 0 5%;
-    width: 100%;
+  box-sizing: border-box;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 15px;
+  /* width: 100%; */
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 
-    height: auto;
+  height: auto;
 }
 
-p, a {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    
+p,
+a {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
 }
 
-h2, h3, h4 {
-    font-family: 'Roboto-extra-bold' sans-serif;
+h2,
+h3,
+h4 {
+  font-family: "Roboto-extra-bold" sans-serif;
 }
 
 .header-bot-container {
-    /* 50 */
-    margin: 50px 0;
-    display: flex;
-    /* justify-content: space-between; */
-    flex-direction: column;
-    gap: 30px;
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.header-bot-text-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;   
-    gap: 20px;
+.header-bot-text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
 }
 
 .header-bot-text-content h2 {
-    color: #f9faf8;
-    font-size: 48px;
+  color: #f9faf8;
+  font-size: 48px;
 
-    text-align: center;
+  text-align: center;
 }
 
-.header-bot-text-content p, 
+.header-bot-text-content p,
 .subscription h4,
-.subscription p 
-{
-    color: #e5e7eb;
+.subscription p {
+  color: #e5e7eb;
 
-    text-align: center;
 }
 
 .header-bot-text-content a {
-    background-color: #3882f6;
-    text-align: center;
-    width: 150px;
+  background-color: #3882f6;
+  text-align: center;
+  width: 150px;
 
-    padding: 10px;
-    margin: 0 auto;
-    border-radius: 5px;
-
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 5px;
 }
 
-main h3, main blockquote {
-    color: #1f2937;
-    font-size: 36px;
+main h3,
+main blockquote {
+  color: #1f2937;
+  font-size: 36px;
 }
 
 main h3 {
-    text-align: center;
-    /* or 30 */
-    margin: 40px 0; 
+  text-align: center;
+  /* or 30 */
+  margin: 40px 0;
 
-    padding: 0 20px;
+  padding: 0 20px;
 }
 
 .flower-images {
-    display: flex;
-    /* justify-content: space-around; */
+  display: flex;
+  /* justify-content: space-around; */
 
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 0 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 0 10px;
 }
 
 .flower-images img {
-    height: 150px;
+  height: 150px;
 
-    /* object-fit: cover;
+  border: 2px solid #1f2937;
+  border-radius: 8px;
+  /* object-fit: cover;
     width: 100%;
     max-width: 250px; */
 }
 
 .flower-image-wrapper {
-   width: 150px;
+  width: 150px;
 }
 
 .flower-image-wrapper p {
-    text-align: center;
+  text-align: center;
 }
 
 .flower-quote {
-    background-color: #e5e7eb;
-    margin: 40px 0;
-    padding: 60px 20px;
+  background-color: #e5e7eb;
+  margin: 40px 0;
+  padding: 60px 20px;
 }
 
 .flower-quote blockquote {
-    font-family: 'Roboto-light-italic', sans-serif;
-    text-align: center;
-    width: 100%;
-    max-width: 1200px;
+  font-family: "Roboto-light-italic", sans-serif;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
 
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .flower-quote footer {
-    background-color: transparent;
-    /* text-align: end; */
-    font-weight: 900;
+  background-color: transparent;
+  text-align: end;
+  font-weight: 900;
 
-    text-align: center;
-    font-weight: 900;
-    margin-top: 20px;
-    padding: 0 20px;
+  color: #1f2937;
+  /* text-align: center; */
+  font-weight: 900;
+  margin-top: 20px;
+  padding: 0 20px;
 }
 
 .subscription-wrapper {
-    background-color: #3882f6;
-    /* width: 800px; */
+  background-color: #3882f6;
+  /* width: 800px; */
 
-    max-width: 800px;
-    width: 100%;
+  max-width: 800px;
+  width: 100%;
 
-    margin: 50px auto;
-    border-radius: 5px;
-    /* padding: 30px 100px; */
-    display: flex;
-    /* justify-content: space-between; */
-    gap:20px;
-    text-align: center;
-    align-items: center;
+  margin: 50px auto;
+  border-radius: 5px;
+  /* padding: 30px 100px; */
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  /* text-align: center; */
+  align-items: center;
 }
 
 .subscription h4 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .subscription-wrapper a {
-    color: #e5e7eb;
-    border: 1px solid #e5e7eb;
-    border-radius: 5px;
-    padding: 7px 10px;
+  color: #e5e7eb;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  padding: 7px 10px;
 
-    display: inline-block;
+  display: inline-block;
 }
 
 .subscription-wrapper a:hover {
-    background-color: rgb(174, 172, 29);
+  background-color: rgb(174, 172, 29);
 }
 
-
-
 @media screen and (min-width: 768px) {
-    .container {
-        padding: 0 10%;
-    }
-    
-    .header-bot-container {
-        flex-direction: row;
-        margin: 100px 0;
-    }
-    
-    .header-bot-text-content {
-        width: 48%;
-        text-align: left;
-    }
-    
-    .header-bot-text-content h2 {
-        font-size: 48px;
-        text-align: left;
-    }
-    
-    .header-bot-text-content p {
-        text-align: left;
-    }
-    
-    .header-bot-text-content a {
-        margin: 0;
-    }
-    
-    main h3, main blockquote {
-        font-size: 36px;
-    }
-    
-    .subscription-wrapper {
-        flex-direction: row;
-        text-align: left;
-        padding: 30px 50px;
-    }
-    
-    .subscription {
-        flex: 1;
-    }
+  .container {
+    padding: 0 10%;
+  }
+
+  .header-bot-container {
+    flex-direction: row;
+    margin: 100px 0;
+  }
+
+  .header-bot-text-content {
+    width: 48%;
+    text-align: left;
+  }
+
+  .header-bot-text-content h2 {
+    font-size: 48px;
+    text-align: left;
+  }
+
+  .header-bot-text-content p {
+    text-align: left;
+  }
+
+  .header-bot-text-content a {
+    margin: 0;
+  }
+
+  main h3,
+  main blockquote {
+    font-size: 36px;
+  }
+
+  .subscription-wrapper {
+    flex-direction: row;
+    text-align: left;
+    padding: 30px 50px;
+  }
+
+  .subscription {
+    flex: 1;
+  }
 }

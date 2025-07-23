@@ -9,7 +9,7 @@ html, body {
 header, footer {
     background-color: #1F2937;
     padding: 10px 0;
-    color:#e5e7eb;
+   
 }
 
 
@@ -36,17 +36,14 @@ header a:hover {
 }
 
 .header-top-container {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-    box-sizing: border-box;
+    /* padding: 0 15px; */
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    /* width: 100%; */
+    /* box-sizing: border-box; */
 }
 
 nav {
@@ -138,6 +135,7 @@ main {
 
 footer {
     text-align: center;
+     color:#e5e7eb;
 }
 
 

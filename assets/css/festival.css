@@ -67,6 +67,14 @@ footer {
     padding-left: 50%;
 }
 
+h1>a {
+font-size: 24px;
+}
+
+.header-top-container{
+  margin-top: -15px;
+}
+
 
 @media (max-width: 1200px) {
    .para-section {
