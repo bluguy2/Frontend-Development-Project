@@ -117,11 +117,6 @@ hr {
 }
 
 
-.header-top-container{
-     padding: 0 12%;
-}
-
-
 footer{
   display: flex;
   flex-direction: column;
