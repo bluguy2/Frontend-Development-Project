@@ -120,5 +120,17 @@ font-size: 24px;
     max-width: 90%;
     padding: 0 1rem;
   }
+  
+  .festival-dropdown {
+    text-align: center;
+    width: 100%;
+  }
+  .festival-menu {
+       position: static;
+       width: 100%;
+       text-align: center;
+       margin-top: 5px;
+       display: none;
+    }  
 }
 
