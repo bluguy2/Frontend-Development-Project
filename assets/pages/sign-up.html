@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="icon/xml+png" href="../images/flower-icon.png">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="../css/sign-up.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <section class="header-top-container">
+                    <h1><a href="../../index.html">Our flowers</a></h1>
+                <nav>
+                    <div class="flower-dropdown">
+                        <a href="#" class="flowers-dropdown">Flowers ▽</a>
+                        <div class="flower-dropdown-menu">
+                            <a href="./assets/pages/lily.html">Lily</a>
+                            <a href="./assets/pages/marigold.html">Marigold</a>
+                            <a href="./assets/pages/orchid.html">Orchid</a>
+                            <a href="./assets/pages/peony.html">Peony</a>
+                        </div>
+                    </div>
+                    <div class="festival-dropdown">
+                        <a href="#" class="festival-dropdown">Festivals ▽</a>
+                        <div class="festival-dropdown-menu">
+                            <a href="./assets/pages/fest1.html">Chelsea Flower Show</a>
+                            <a href="./assets/pages/fest2.html">Canadian Tulip Festival</a>
+                            <a href="./assets/pages/fest3.html">Flower Carpet (Brussels)</a>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+        </div>
+    </header>
+    <main>
+    <form>
+    <fieldset class="personal-data">
+        <legend>Personal Data</legend>
+        <div class="personal-data-wrapper">
+            <div class="input-group">
+                <label for="first-name">First Name:</label>
+                <input id="first-name" name="first-name" placeholder="ex. Jane" required />
+            </div>
+            <div class="input-group">
+                <label for="last-name">Last Name:</label>
+                <input id="last-name" name="last-name" placeholder="ex. Doe" required />
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" placeholder="example@example.com" required />
+            </div>
+            <div class="input-group">
+                <label for="confirm-email">Confirm Email:</label>
+                <input id="confirm-email" name="confirm-email" type="email" placeholder="example@example.com" required />
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input id="password" name="password" type="password" placeholder="Insert a safe password" required />
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input id="confirm-password" name="confirm-password" type="password" placeholder="Repeat your password"
+                    required />
+            </div>
+        </div>
+    </fieldset>
+
+      <fieldset>
+        <legend>Privacy</legend>
+        <div class="checkbox-group">
+          <input type="checkbox" id="terms" name="terms" required />
+          <label for="terms">I accept the <a href="#">Terms & Conditions</a></label>
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="newsletter" name="newsletter" />
+          <label for="newsletter">Subscribe to our newsletter</label>
+        </div>
+      </fieldset>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </main>
+
+    <footer>
+        <div class="container">
+            <p>Copyright &copy;</p>
+        </div>
+    </footer>
+</body>
+
+</html>
