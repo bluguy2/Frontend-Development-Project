@@ -1,19 +1,23 @@
-html, body {
+/* html, body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-}
+    /* min-height: 100vh;
+    margin: 0; 
+    padding: 0; 
+    
+    Don't need, but don't need anymore*/
+/* } */
 
 header, footer {
     background-color: #1F2937;
     padding: 10px 0;
-   
 }
 
+a {
+    text-decoration: none;
+}
 
-header h1, header a {
+header h1 {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -24,11 +28,9 @@ header h1 {
 
 header a {
     color: #e5e7eb;
-    font-size: 18px;
     padding: 5px 10px;
     border-radius: 5px;
     transition: all 0.4s ease;
-    text-decoration: none;
 }
 
 header a:hover {
@@ -39,20 +41,13 @@ header a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 0 15px; */
-    /* max-width: 1200px; */
-    /* margin: 0 auto; */
-    /* width: 100%; */
-    /* box-sizing: border-box; */
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* width: 350px;
-     */
-     gap: 15px;
+    gap: 15px;
 }
 
 @keyframes fade-in {
@@ -64,7 +59,8 @@ nav {
     }
 }
 
-.flower-dropdown-menu {
+.flower-dropdown-menu, 
+.festival-dropdown-menu {
     display: none;
     position: absolute;
     top: 25px;
@@ -74,29 +70,28 @@ nav {
     border-radius: 5px;
     padding: 10px;
     opacity: 0;
-
     min-width: 150px;
     z-index: 100;
 }
 
-.flower-dropdown-menu a {
+.flower-dropdown-menu a, 
+.festival-dropdown-menu a {
     margin: 5px 0;
     display: block;
-
-    white-space: nowrap;
 }
 
-.flower-dropdown {
+.flower-dropdown, 
+.festival-dropdown  {
     position: relative;
-    /* display: inline-block; */
 }
 
-.flower-dropdown:hover .flower-dropdown-menu {
+.flower-dropdown:hover .flower-dropdown-menu,
+.festival-dropdown:hover .festival-dropdown-menu {
     display: block;
     animation: fade-in 0.5s ease forwards;
 }
 
-.festival-menu {
+/* .festival-menu {
     display: none;
     position: absolute;
     top: 25px;
@@ -106,36 +101,49 @@ nav {
     border-radius: 5px;
     padding: 10px;
     opacity: 0;
-}
+} 
+    DRY rule    
+*/
 
-.festival-menu a {
+/* .festival-menu a {
     margin: 5px 0;
     display: block;
 }
+    Dry rule
+*/
 
-.festival-dropdown {
+/* .festival-dropdown {
     position: relative;
     display: inline-block;
 }
+    Dry rule    
+*/
 
-.festival-dropdown:hover .festival-menu {
+/* .festival-dropdown:hover .festival-menu {
     display: block;
     animation: fade-in 0.5s ease forwards;
 }
+    Dry Rule
+ */
 
-main {
-    flex: 1;
+/* main {
+    flex: 1; */
 
-    width: 100%;
+    /* width: 100%;
     max-width: 1850px;
     margin: 0 auto;
     padding: 20px 15px;
-    box-sizing: border-box;
-}
+    box-sizing: border-box; 
+    
+    Container rule was created before
+    */
+
+    /* No longer needed, worked with top rule
+} */
 
 footer {
     text-align: center;
-     color:#e5e7eb;
+    color:#e5e7eb;
 }
 
 
@@ -154,27 +162,30 @@ footer {
     nav {
         flex-direction: column;
         gap: 5px;
-        align-items: center;
+        /* align-items: center; no point, it's in original styles */
     }
     
-    .flower-dropdown {
+    .flower-dropdown,
+    .festival-dropdown {
         text-align: center;
-        width: 100%;
+        width: 50%; /* was to big */
     }
     
-    .flower-dropdown-menu {
+    .flower-dropdown-menu,
+    .festival-dropdown-menu {
         position: static;
         width: 100%;
-        text-align: center;
+        /* text-align: center; no point, double code */
         margin-top: 5px;
         display: none;
     }
     
     .flower-dropdown:hover .flower-dropdown-menu,
-    .flower-dropdown:focus-within .flower-dropdown-menu {
+    .flower-dropdown:focus-within .flower-dropdown-menu,
+    .festival-dropdown:hover .festival-dropdown-menu,
+    .festival-dropdown:focus-within .festival-dropdown-menu {
         display: block;
         position: static;
         animation: fade-in 0.5s ease forwards;
     }
-
 }

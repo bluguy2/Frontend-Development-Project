@@ -1,26 +1,32 @@
-@import url("./h&f-styles-template.css");
+@import url(./h&f-styles-component.css);
+@import url(./font-component.css);
 
-body {
-	overflow-x: hidden;
-    font-family: "roboto";
-	margin: 0;
+* {
+  margin: 0;
 }
 
-p   {
-	max-width: 100%;
-    text-align: left;
-    height: auto;
-    display: block;
-    margin: 1rem auto;  
-    margin-bottom: 1em;    
+.container {
+  box-sizing: border-box;
+  max-width: 1360px; /* changed to smaller width */
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-.section-1 .fest-heading {
-	text-align: center;
-	font-size: 3em;
-	justify-content: center;
-	padding-bottom: 20px;
-	text-shadow: 6px 5px 6px #727d8c;
+p {
+  max-width: 100%;
+  /* text-align: left; */
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  margin-bottom: 1em;
+}
+
+.section-1 h2 {
+  text-align: center;
+  font-size: 3em;
+  justify-content: center;
+  padding-bottom: 20px;
+  text-shadow: 6px 5px 6px #727d8c;
 }
 
 .para-section {
@@ -48,7 +54,7 @@ img {
 }
 
 .para-section-1 img {
-	padding-top: 10px;
+  padding-top: 10px;
 }
 
 .fest-text1 {
@@ -63,74 +69,69 @@ img {
   padding-right: 20px;
 }
 
-footer {
-    padding-left: 50%;
-}
+/* footer {
+  padding-left: 50%;
+} */
 
 h1>a {
-font-size: 24px;
+  font-size: 24px;
 }
-
-.header-top-container{
-  margin-top: -15px;
-}
-
 
 @media (max-width: 1200px) {
-   .para-section {
-	   position: relative;
-       display: inline-block;
-   }
-   
-   .para-section-1 {
-     position: relative;
-     display: inline-block;
-     background-color: #e5e7eb;
-	 margin: 40px 0;
-}
-   
-   .fest-text1 .fest-text2{
-     flex-direction: row;
-}
-   
-   
+  .para-section {
+    position: relative;
+    display: inline-block;
+  }
+
+  .para-section-1 {
+    position: relative;
+    display: inline-block;
+    background-color: #e5e7eb;
+    margin: 40px 0;
+  }
+
+  .fest-text1 .fest-text2 {
+    flex-direction: row;
+  }
+
+
   .para-section img {
-	width: 600px;
+    width: 600px;
     margin: 2rem auto;
-	display: block;
-	object-fit: contain;
-	border-radius: 10px;
+    display: block;
+    object-fit: contain;
+    border-radius: 10px;
   }
-  
+
   .para-section p {
-	padding-top: 80px;
+    padding-top: 80px;
     max-width: 90%;
     padding: 0 1rem;
   }
-  
+
   .para-section-1 img {
-	width: 600px;
+    width: 600px;
     margin: 2rem auto;
-	display: block;
-	object-fit: contain;
+    display: block;
+    object-fit: contain;
   }
-  
+
   .para-section-1 p {
-	padding-top: 80px;
+    padding-top: 80px;
     max-width: 90%;
     padding: 0 1rem;
   }
-  
+
   .festival-dropdown {
     text-align: center;
     width: 100%;
   }
-  .festival-menu {
-       position: static;
-       width: 100%;
-       text-align: center;
-       margin-top: 5px;
-       display: none;
-    }  
-}
 
+  .festival-menu {
+    position: static;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    display: none;
+  }
+}

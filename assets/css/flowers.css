@@ -1,14 +1,15 @@
-@import url("./h&f-styles-template.css");
+@import url(./h&f-styles-component.css);
+@import url(./font-component.css);
 
-body {
-  /* display: flex; */
-  overflow-x: hidden;
-  /* flex-direction: column; */
-  /* min-height: 100vh; */
-  font-family: "roboto", sans-serif;
+* {
   margin: 0;
-  /* padding-left: 3rem;
-  padding-right: 3rem; */
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1360px; /* changed to smaller width */
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* images */
@@ -82,7 +83,7 @@ main.grid{
 
 }
 
-.grid .title {
+.grid h2 {
   grid-area: title;
   display: flex;
   justify-content: center;
@@ -120,9 +121,11 @@ hr {
   background-image: linear-gradient(#1F2937, #E5E7EB);
 }
 
-.header-top-container{
+/* .header-top-container{
   margin-top: -15px;
 }
+no point - ruins header  
+*/
 
 
 footer{

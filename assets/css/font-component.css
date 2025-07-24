@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-extra-bold";
+  src: url(../fonts/Roboto-ExtraBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-light-italic";
+  src: url(../fonts/Roboto-LightItalic.ttf) format("truetype");
+}
+
+p,
+a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+h2,
+h3,
+h4 {
+  font-family: 'Roboto-extra-bold', sans-serif;
+}

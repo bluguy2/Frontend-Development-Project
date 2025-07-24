@@ -1,4 +1,5 @@
-@import url(./h&f-styles-template.css);
+@import url(./h&f-styles-component.css);
+@import url(./font-component.css);
 
 @font-face {
   font-family: "Roboto";
@@ -17,41 +18,36 @@
 
 * {
   margin: 0;
-  /* 
-     box-sizing: border-box; */
 }
 
 .container {
   box-sizing: border-box;
-  max-width: 1920px;
+  max-width: 1360px; /* changed to smaller width */
   margin: 0 auto;
   padding: 0 15px;
-  /* width: 100%; */
 }
 
 img {
   max-width: 100%;
-
-  height: auto;
+  height: 100%;  
+  /* changed height, 
+  to keep picture's default size,
+  works well for other elements responsiveness */
 }
 
 p,
 a {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
 }
 
-h2,
-h3,
-h4 {
-  font-family: "Roboto-extra-bold" sans-serif;
-}
+
 
 .header-bot-container {
   margin: 50px 0;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+  align-items: center;
   gap: 30px;
 }
 
@@ -59,18 +55,19 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
+  width: 50%;
   gap: 20px;
 }
 
 .header-bot-text-content h2 {
-  color: #f9faf8;
+  /* color: #f9faf8;  moved*/
   font-size: 48px;
 
-  text-align: center;
+  /* text-align: center;  not matching with pdf*/
 }
 
-.header-bot-text-content p,
+.header-bot-text-content,
+.subscription-wrapper a,
 .subscription h4,
 .subscription p {
   color: #e5e7eb;
@@ -83,7 +80,7 @@ h4 {
   width: 150px;
 
   padding: 10px;
-  margin: 0 auto;
+  /* margin: 0 auto; not matching with pdf */
   border-radius: 5px;
 }
 
@@ -95,30 +92,23 @@ main blockquote {
 
 main h3 {
   text-align: center;
-  /* or 30 */
   margin: 40px 0;
 
-  padding: 0 20px;
+  /* padding: 0 20px;  no difference*/
 }
 
 .flower-images {
   display: flex;
-  /* justify-content: space-around; */
-
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; no point */
   justify-content: center;
   gap: 25px;
-  padding: 0 10px;
+  /* padding: 0 10px; no point */
 }
 
 .flower-images img {
   height: 150px;
-
   border: 2px solid #1f2937;
   border-radius: 8px;
-  /* object-fit: cover;
-    width: 100%;
-    max-width: 250px; */
 }
 
 .flower-image-wrapper {
@@ -132,44 +122,36 @@ main h3 {
 .flower-quote {
   background-color: #e5e7eb;
   margin: 40px 0;
-  padding: 60px 20px;
+  padding: 60px 0;
 }
 
 .flower-quote blockquote {
-  font-family: "Roboto-light-italic", sans-serif;
+  font-family: 'Roboto-light-italic', sans-serif;
   text-align: center;
-  width: 100%;
+  /* width: 100%; no point */
   max-width: 1200px;
 
-  margin: 0 auto;
+  /* margin: 0 auto;  no point */
 }
 
 .flower-quote footer {
   background-color: transparent;
   text-align: end;
   font-weight: 900;
-
   color: #1f2937;
-  /* text-align: center; */
-  font-weight: 900;
   margin-top: 20px;
   padding: 0 20px;
 }
 
 .subscription-wrapper {
   background-color: #3882f6;
-  /* width: 800px; */
-
   max-width: 800px;
-  width: 100%;
-
   margin: 50px auto;
   border-radius: 5px;
-  /* padding: 30px 100px; */
+  padding: 30px 100px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  /* text-align: center; */
   align-items: center;
 }
 
@@ -178,58 +160,71 @@ main h3 {
 }
 
 .subscription-wrapper a {
-  color: #e5e7eb;
+  /* color: #e5e7eb; moved */
   border: 1px solid #e5e7eb;
   border-radius: 5px;
   padding: 7px 10px;
 
-  display: inline-block;
+  /* display: inline-block; no point */
 }
 
 .subscription-wrapper a:hover {
   background-color: rgb(174, 172, 29);
 }
 
-@media screen and (min-width: 768px) {
-  .container {
+@media screen and (max-width: 768px) {
+  /* .container {
     padding: 0 10%;
   }
+  
+  no point
+  */
 
   .header-bot-container {
-    flex-direction: row;
-    margin: 100px 0;
+    flex-direction: column;
+    /* margin: 100px 0; no point */
   }
 
   .header-bot-text-content {
-    width: 48%;
-    text-align: left;
+    width: 80%; /* increased */
+    /* text-align: center; no point */
   }
 
   .header-bot-text-content h2 {
     font-size: 48px;
-    text-align: left;
+    text-align: center;
   }
 
-  .header-bot-text-content p {
+  /* .header-bot-text-content p {
     text-align: left;
-  }
+  } 
+  no point  
+  */
 
   .header-bot-text-content a {
-    margin: 0;
+    margin: 0 auto; 
+    /* moved to center */
   }
 
-  main h3,
+  /* main h3,
   main blockquote {
     font-size: 36px;
   }
+  already exists, DRY rule  
+  */
 
   .subscription-wrapper {
-    flex-direction: row;
-    text-align: left;
+    /* flex-direction: row;
+    text-align: left; 
+    
+    no point*/
     padding: 30px 50px;
   }
 
-  .subscription {
+  /* .subscription {
     flex: 1;
   }
+  no point  
+  */
 }
+
