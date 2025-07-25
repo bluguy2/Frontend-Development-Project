@@ -1,10 +1,11 @@
 * {
-    margin: 0;
+  margin: 0;
 }
 
-header, footer {
-    background-color: #1F2937;
-    padding: 10px 0;
+header,
+footer {
+  background-color: #1f2937;
+  padding: 10px 0;
 }
 
 .container {
@@ -15,135 +16,129 @@ header, footer {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 header h1 {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 header h1 {
-    color: #f9faf8;
-    font-size: 24px;
+  color: #f9faf8;
+  font-size: 24px;
 }
 
 header a {
-    color: #e5e7eb;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: all 0.4s ease;
+  color: #e5e7eb;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.4s ease;
 }
 
 header a:hover {
-    background-color: rgb(174, 172, 29);
+  background-color: rgb(174, 172, 29);
 }
 
 .header-top-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* position: fixed;
-    top: 2%;
-    left: 0;
-    background-color: #1F2937;
-    width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .empty-block {
-    width: 25%;
+  width: 25%;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
 }
 
 @keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.flower-dropdown-menu, 
-.festival-dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 25px;
-    right: 0;
-    background-color: #4d5f79;
-    border-radius: 5px;
-    padding: 10px;
+  from {
     opacity: 0;
-    min-width: 150px;
-    z-index: 100;
-    text-align: center;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.flower-dropdown-menu a, 
+.flower-dropdown-menu,
+.festival-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  background-color: #4d5f79;
+  border-radius: 5px;
+  padding: 10px;
+  opacity: 0;
+  min-width: 150px;
+  z-index: 100;
+  text-align: center;
+}
+
+.flower-dropdown-menu a,
 .festival-dropdown-menu a {
-    margin: 5px 0;
-    display: block;
+  margin: 5px 0;
+  display: block;
 }
 
-.flower-dropdown, 
-.festival-dropdown  {
-    position: relative;
+.flower-dropdown,
+.festival-dropdown {
+  position: relative;
 }
 
 .flower-dropdown:hover .flower-dropdown-menu,
 .festival-dropdown:hover .festival-dropdown-menu {
-    display: block;
-    animation: fade-in 0.5s ease forwards;
+  display: block;
+  animation: fade-in 0.5s ease forwards;
 }
 
 footer {
-    text-align: center;
-    color:#e5e7eb;
+  text-align: center;
+  color: #e5e7eb;
 }
 
+@media screen and (max-width: 768px) {
+  .header-top-container {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+  }
 
-@media screen and (max-width:768px){
-   .header-top-container {
-        flex-direction: column;
-        align-items: stretch;
-        padding: 10px;
-    }
-    
-    header h1 {
-        text-align: center;
-        padding: 10px 0;
-    }
-    
-    nav {
-        flex-direction: column;
-        gap: 5px;
-    }
-    
-    .flower-dropdown,
-    .festival-dropdown {
-        text-align: center;
-        width: 50%; 
-    }
-    
-    .flower-dropdown-menu,
-    .festival-dropdown-menu {
-        position: static;
-        width: 100%;
-        margin-top: 5px;
-        display: none;
-    }
-    
-    .flower-dropdown:hover .flower-dropdown-menu,
-    .flower-dropdown:focus-within .flower-dropdown-menu,
-    .festival-dropdown:hover .festival-dropdown-menu,
-    .festival-dropdown:focus-within .festival-dropdown-menu {
-        display: block;
-        position: static;
-        animation: fade-in 0.5s ease forwards;
-    }
+  header h1 {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .flower-dropdown,
+  .festival-dropdown {
+    text-align: center;
+    width: 50%;
+  }
+
+  .flower-dropdown-menu,
+  .festival-dropdown-menu {
+    position: static;
+    width: 100%;
+    margin-top: 5px;
+    display: none;
+  }
+
+  .flower-dropdown:hover .flower-dropdown-menu,
+  .flower-dropdown:focus-within .flower-dropdown-menu,
+  .festival-dropdown:hover .festival-dropdown-menu,
+  .festival-dropdown:focus-within .festival-dropdown-menu {
+    display: block;
+    position: static;
+    animation: fade-in 0.5s ease forwards;
+  }
 }
