@@ -16,23 +16,9 @@
   src: url(../fonts/Roboto-LightItalic.ttf) format("truetype");
 }
 
-* {
-  margin: 0;
-}
-
-.container {
-  box-sizing: border-box;
-  max-width: 1360px; /* changed to smaller width */
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 img {
   max-width: 100%;
-  height: 100%;  
-  /* changed height, 
-  to keep picture's default size,
-  works well for other elements responsiveness */
+  height: 100%;
 }
 
 p,
@@ -60,10 +46,7 @@ a {
 }
 
 .header-bot-text-content h2 {
-  /* color: #f9faf8;  moved*/
   font-size: 48px;
-
-  /* text-align: center;  not matching with pdf*/
 }
 
 .header-bot-text-content,
@@ -78,9 +61,7 @@ a {
   background-color: #3882f6;
   text-align: center;
   width: 150px;
-
   padding: 10px;
-  /* margin: 0 auto; not matching with pdf */
   border-radius: 5px;
 }
 
@@ -93,16 +74,12 @@ main blockquote {
 main h3 {
   text-align: center;
   margin: 40px 0;
-
-  /* padding: 0 20px;  no difference*/
 }
 
 .flower-images {
   display: flex;
-  /* flex-wrap: wrap; no point */
   justify-content: center;
   gap: 25px;
-  /* padding: 0 10px; no point */
 }
 
 .flower-images img {
@@ -128,10 +105,7 @@ main h3 {
 .flower-quote blockquote {
   font-family: 'Roboto-light-italic', sans-serif;
   text-align: center;
-  /* width: 100%; no point */
   max-width: 1200px;
-
-  /* margin: 0 auto;  no point */
 }
 
 .flower-quote footer {
@@ -160,12 +134,9 @@ main h3 {
 }
 
 .subscription-wrapper a {
-  /* color: #e5e7eb; moved */
   border: 1px solid #e5e7eb;
   border-radius: 5px;
   padding: 7px 10px;
-
-  /* display: inline-block; no point */
 }
 
 .subscription-wrapper a:hover {
@@ -173,21 +144,12 @@ main h3 {
 }
 
 @media screen and (max-width: 768px) {
-  /* .container {
-    padding: 0 10%;
-  }
-  
-  no point
-  */
-
   .header-bot-container {
     flex-direction: column;
-    /* margin: 100px 0; no point */
   }
 
   .header-bot-text-content {
-    width: 80%; /* increased */
-    /* text-align: center; no point */
+    width: 80%;
   }
 
   .header-bot-text-content h2 {
@@ -195,36 +157,11 @@ main h3 {
     text-align: center;
   }
 
-  /* .header-bot-text-content p {
-    text-align: left;
-  } 
-  no point  
-  */
-
   .header-bot-text-content a {
-    margin: 0 auto; 
-    /* moved to center */
+    margin: 0 auto;
   }
-
-  /* main h3,
-  main blockquote {
-    font-size: 36px;
-  }
-  already exists, DRY rule  
-  */
 
   .subscription-wrapper {
-    /* flex-direction: row;
-    text-align: left; 
-    
-    no point*/
     padding: 30px 50px;
   }
-
-  /* .subscription {
-    flex: 1;
-  }
-  no point  
-  */
 }
-

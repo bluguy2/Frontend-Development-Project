@@ -1,16 +1,17 @@
-/* html, body {
-    display: flex;
-    flex-direction: column;
-    /* min-height: 100vh;
-    margin: 0; 
-    padding: 0; 
-    
-    Don't need, but don't need anymore*/
-/* } */
+* {
+    margin: 0;
+}
 
 header, footer {
     background-color: #1F2937;
     padding: 10px 0;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 a {
@@ -64,14 +65,14 @@ nav {
     display: none;
     position: absolute;
     top: 25px;
-    left: 0;
-    width: 100px;
+    right: 0;
     background-color: #4d5f79;
     border-radius: 5px;
     padding: 10px;
     opacity: 0;
     min-width: 150px;
     z-index: 100;
+    text-align: center;
 }
 
 .flower-dropdown-menu a, 
@@ -90,56 +91,6 @@ nav {
     display: block;
     animation: fade-in 0.5s ease forwards;
 }
-
-/* .festival-menu {
-    display: none;
-    position: absolute;
-    top: 25px;
-    left: 0;
-    width: 100px;
-    background-color: #4d5f79;
-    border-radius: 5px;
-    padding: 10px;
-    opacity: 0;
-} 
-    DRY rule    
-*/
-
-/* .festival-menu a {
-    margin: 5px 0;
-    display: block;
-}
-    Dry rule
-*/
-
-/* .festival-dropdown {
-    position: relative;
-    display: inline-block;
-}
-    Dry rule    
-*/
-
-/* .festival-dropdown:hover .festival-menu {
-    display: block;
-    animation: fade-in 0.5s ease forwards;
-}
-    Dry Rule
- */
-
-/* main {
-    flex: 1; */
-
-    /* width: 100%;
-    max-width: 1850px;
-    margin: 0 auto;
-    padding: 20px 15px;
-    box-sizing: border-box; 
-    
-    Container rule was created before
-    */
-
-    /* No longer needed, worked with top rule
-} */
 
 footer {
     text-align: center;
@@ -162,20 +113,18 @@ footer {
     nav {
         flex-direction: column;
         gap: 5px;
-        /* align-items: center; no point, it's in original styles */
     }
     
     .flower-dropdown,
     .festival-dropdown {
         text-align: center;
-        width: 50%; /* was to big */
+        width: 50%; 
     }
     
     .flower-dropdown-menu,
     .festival-dropdown-menu {
         position: static;
         width: 100%;
-        /* text-align: center; no point, double code */
         margin-top: 5px;
         display: none;
     }

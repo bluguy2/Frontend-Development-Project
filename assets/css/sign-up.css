@@ -2,28 +2,32 @@
 @import url(./font-component.css);
 
 
-*{
-    font-family: "roboto", sans-serif;
-    margin: 0;
+* {
+  font-family: "roboto", sans-serif;
 }
 
-.container {
-  box-sizing: border-box;
-  max-width: 1360px; 
-  margin: 0 auto;
-  padding: 0 15px;
-}
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
+  /* to attach footer to bottom */
+}
 
 h1 a {
-    font-size: 24px;
+  font-size: 24px;
 }
 
-nav a{
-  font-size: 18px;;
+nav a {
+  font-size: 18px;
+  ;
 }
 
-
+main {
+  flex: 1;
+  /* to attach footer to bottom */
+}
 
 form {
   width: min(60%, 800px);
@@ -51,14 +55,12 @@ fieldset {
 .input-group {
   display: flex;
   align-items: center;
-  /* justify-content: flex-start; */
 }
 
 .input-group label {
   width: 30%;
   text-align: right;
   margin-right: 1rem;
-  /* font-weight: 500; */
   color: #2d3748;
 }
 

@@ -5,132 +5,49 @@
   margin: 0;
 }
 
-.container {
-  box-sizing: border-box;
-  max-width: 1360px; /* changed to smaller width */
-  margin: 0 auto;
-  padding: 0 15px;
+img {
+  width: 50%;
+  border-radius: 10px;
 }
 
-p {
-  max-width: 100%;
-  /* text-align: left; */
-  height: auto;
-  display: block;
-  margin: 1rem auto;
-  margin-bottom: 1em;
+h1 > a {
+  font-size: 24px;
 }
 
-.section-1 h2 {
+main h2 {
   text-align: center;
   font-size: 3em;
-  justify-content: center;
   padding-bottom: 20px;
   text-shadow: 6px 5px 6px #727d8c;
 }
 
-.para-section {
+.fest {
   display: flex;
-  padding-left: 65px;
-  padding-right: 65px;
+  align-items: center;
+  gap: 50px;
 }
 
-.para-section-1 {
-  display: flex;
-  padding-left: 65px;
-  padding-right: 65px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+.fest p {
+  text-align: justify;
+}
+
+.para-section {
+  padding: 30px 0;
   background-color: #e5e7eb;
   margin: 40px 0;
 }
 
-img {
-  width: 600px;
-  align-items: center;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.para-section-1 img {
-  padding-top: 10px;
-}
-
-.fest-text1 {
-  font-size: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.fest-text2 {
-  font-size: 20px;
-  padding-left: 30px;
-  padding-right: 20px;
-}
-
-/* footer {
-  padding-left: 50%;
-} */
-
-h1>a {
-  font-size: 24px;
-}
-
-@media (max-width: 1200px) {
-  .para-section {
-    position: relative;
-    display: inline-block;
+@media (max-width: 1000px) {
+  .fest {
+    flex-direction: column;
   }
-
-  .para-section-1 {
-    position: relative;
-    display: inline-block;
-    background-color: #e5e7eb;
-    margin: 40px 0;
+  .fest img {
+    width: 80%;
   }
-
-  .fest-text1 .fest-text2 {
-    flex-direction: row;
+  .reverse {
+    order: 1;
   }
-
-
-  .para-section img {
-    width: 600px;
-    margin: 2rem auto;
-    display: block;
-    object-fit: contain;
-    border-radius: 10px;
-  }
-
-  .para-section p {
-    padding-top: 80px;
-    max-width: 90%;
-    padding: 0 1rem;
-  }
-
-  .para-section-1 img {
-    width: 600px;
-    margin: 2rem auto;
-    display: block;
-    object-fit: contain;
-  }
-
-  .para-section-1 p {
-    padding-top: 80px;
-    max-width: 90%;
-    padding: 0 1rem;
-  }
-
-  .festival-dropdown {
+  .fest p {
     text-align: center;
-    width: 100%;
-  }
-
-  .festival-menu {
-    position: static;
-    width: 100%;
-    text-align: center;
-    margin-top: 5px;
-    display: none;
   }
 }

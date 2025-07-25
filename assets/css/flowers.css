@@ -1,17 +1,6 @@
 @import url(./h&f-styles-component.css);
 @import url(./font-component.css);
 
-* {
-  margin: 0;
-}
-
-.container {
-  box-sizing: border-box;
-  max-width: 1360px; 
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 /* images */
 figure img {
   max-width: 100%;
@@ -40,6 +29,7 @@ figcaption {
 figure img {
   transition: transform 0.3s ease;
 }
+
 figure img:hover {
   transform: scale(1.02);
 }
@@ -61,26 +51,26 @@ p {
   margin-right: auto;
 }
 
-.text-one p:nth-of-type(2), 
+.text-one p:nth-of-type(2),
 .text-two p:nth-last-of-type(2) {
   margin-top: 2rem;
   margin-bottom: 0;
 }
 
-.text-one p:nth-of-type(1), 
+.text-one p:nth-of-type(1),
 .text-two p:nth-of-type(1) {
   margin-top: 0;
   margin-bottom: 2rem;
 }
 
-h1 > a {
+h1>a {
   font-size: 24px;
 }
 
 /* grid */
 .grid {
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
     "title title"
     "text-one image-one"
     "image-two text-two"
@@ -130,7 +120,7 @@ footer {
 hr {
   border: none;
   height: 3px;
-  background-image: linear-gradient(to right,#1F2937, #E5E7EB);
+  background-image: linear-gradient(to right, #1F2937, #E5E7EB);
   margin: 2rem auto;
   width: 100%;
   max-width: 600px;
@@ -182,13 +172,13 @@ footer {
   hr {
     display: none;
   }
-  
+
   .header-top-container {
     padding: 0 5%;
     margin-top: -15px;
   }
 
-  .flower-dropdown-menu a:focus, 
+  .flower-dropdown-menu a:focus,
   .flower-dropdown-menu a:hover {
     background-color: rgb(174, 172, 29);
   }
@@ -197,7 +187,6 @@ footer {
 @media (min-width: 769px) and (max-width: 1024px) {
   .grid {
     padding: 0 5%;
-    /* gap: 20px; */
   }
 
   figure img {
@@ -209,12 +198,12 @@ footer {
   .grid {
     padding: 0 10%;
   }
-  
+
   figure img {
     max-width: 500px;
   }
 
-  main{
+  main {
     max-width: 1800px;
     margin: 0 auto;
   }
