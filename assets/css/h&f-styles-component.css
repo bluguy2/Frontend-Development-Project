@@ -42,6 +42,15 @@ header a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* position: fixed;
+    top: 2%;
+    left: 0;
+    background-color: #1F2937;
+    width: 100%; */
+}
+
+.empty-block {
+    width: 25%;
 }
 
 nav {
