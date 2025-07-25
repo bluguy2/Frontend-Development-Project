@@ -1,89 +1,136 @@
-@import url("./h&f-styles-template.css");
-
-body{overflow-x: hidden;
-font-family: "roboto";}
-
-main{    
-    margin: 2rem;;
-}
+@import url(./h&f-styles-component.css);
+@import url(./font-component.css);
 
 /* images */
-figure img, figure img {
-    max-width: 100%;
-    width: 500px;
-    height: 500px;
-    /* height: auto; */
-    display:block;
-    margin: 5rem auto;
-    object-fit: cover;
-    border-radius: 10px;
+figure img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  max-height: 500px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-figcaption{
-    text-align: center;
-    margin: -4rem 0;
+figure {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+figure img {
+  transition: transform 0.3s ease;
+}
+
+figure img:hover {
+  transform: scale(1.02);
 }
 
 /* text */
-p{max-width: 100%;
-text-align: center;
-height: auto;
-display: block;
-margin: 1rem auto; 
-
-line-height: 2;      
-  margin-bottom: 1em;    
-  max-width: 600px; 
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
-p .text-one{
-    margin-bottom: 1rem;
+p {
+  text-align: center;
+  line-height: 2;
+  margin-bottom: 0.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-one p:nth-of-type(2),
+.text-two p:nth-last-of-type(2) {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.text-one p:nth-of-type(1),
+.text-two p:nth-of-type(1) {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+h1>a {
+  font-size: 24px;
 }
 
 /* grid */
-.grid{
-    display: grid;
-    grid-template-areas: "title title"
-    "text-one image-one "
-    "image-two  text-two"
+.grid {
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "text-one image-one"
+    "image-two text-two"
     "footer footer";
-
-    grid-template-rows: auto 1fr 1fr auto;
-    grid-template-columns: 1fr  1fr;
+  grid-template-rows: auto 1fr 1fr auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
 }
 
-.grid .title{
-    grid-area: title;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+main.grid {
+  padding: 0 5%;
+  box-sizing: border-box;
 }
 
-.grid .image-one{
-    grid-area: image-one;
+.grid h2 {
+  grid-area: title;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  text-shadow: 6px 5px 6px #727d8c;
+  margin: 1.2rem 0;
 }
 
-.grid .text-one{
-    grid-area: text-one;
-}
-.grid .image-two{
-    grid-area: image-two;
+.grid .image-one {
+  grid-area: image-one;
 }
 
-.grid .text-two{
-    grid-area: text-two;
+.grid .text-one {
+  grid-area: text-one;
 }
 
- footer{
-    grid-area: footer;
+.grid .image-two {
+  grid-area: image-two;
+}
+
+.grid .text-two {
+  grid-area: text-two;
+}
+
+footer {
+  grid-area: footer;
 }
 
 /* other */
-hr{
-    border: none;
-    height: 3px;
-    background-image: linear-gradient(#1F2937, #E5E7EB);
+hr {
+  border: none;
+  height: 3px;
+  background-image: linear-gradient(to right, #1F2937, #E5E7EB);
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 600px;
+}
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* responsive */
@@ -98,28 +145,72 @@ hr{
       "footer";
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    gap: 20px;
   }
 
   figure img {
-    width: 100%;
     max-width: 400px;
     height: auto;
-    margin: 2rem auto;
-    object-fit: contain;
+    margin: 0 auto;
   }
-  
+
   figcaption {
-    margin: 1rem auto;
+    margin: 1rem 0;
   }
 
   p {
     max-width: 90%;
     padding: 0 1rem;
   }
-  
+
   .grid .text-one,
   .grid .text-two {
     padding: 0 1rem;
     margin: 1rem 0;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .header-top-container {
+    padding: 0 5%;
+    margin-top: -15px;
+  }
+
+  .flower-dropdown-menu a:focus,
+  .flower-dropdown-menu a:hover {
+    background-color: rgb(174, 172, 29);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid {
+    padding: 0 5%;
+  }
+
+  figure img {
+    max-width: 450px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .grid {
+    padding: 0 10%;
+  }
+
+  figure img {
+    max-width: 500px;
+  }
+
+  main {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+}
+
+@media (hover: hover) {
+  .flower-dropdown-menu a:hover {
+    background-color: rgb(174, 172, 29);
   }
 }
