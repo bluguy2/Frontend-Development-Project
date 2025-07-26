@@ -10,7 +10,19 @@ img {
   border-radius: 10px;
 }
 
-h1 > a {
+.pic-top {
+  width: 100%;
+}
+
+.pic-mid {
+  width: 80%;
+}
+
+.pic-bot {
+  width: 120%;
+}
+
+h1>a {
   font-size: 24px;
 }
 
@@ -18,7 +30,7 @@ main h2 {
   text-align: center;
   font-size: 3em;
   padding-bottom: 20px;
-  text-shadow: 6px 5px 6px #727d8c;
+  margin: 20px 0 10px 0;
 }
 
 .fest {
@@ -41,13 +53,26 @@ main h2 {
   .fest {
     flex-direction: column;
   }
+
   .fest img {
     width: 80%;
   }
+
+  picture {
+    text-align: center;
+  }
+
   .reverse {
     order: 1;
   }
+
   .fest p {
     text-align: center;
   }
+}
+
+@media screen and (max-width: 768px) {
+   .arrow-up {
+    bottom: 0; 
+   }
 }

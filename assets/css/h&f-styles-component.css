@@ -1,5 +1,17 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
 * {
   margin: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  height: 35px;
+  z-index: 10;
 }
 
 header,
@@ -97,16 +109,28 @@ nav {
   animation: fade-in 0.5s ease forwards;
 }
 
+main {
+  position: relative;
+}
+
+.arrow-up {
+  display: none;
+}
+
 footer {
   text-align: center;
   color: #e5e7eb;
 }
 
 @media screen and (max-width: 768px) {
+  
+  header { 
+    padding: unset;
+    height: 60px;
+  }
+
   .header-top-container {
-    flex-direction: column;
-    align-items: stretch;
-    padding: 10px;
+    padding: 5px 10px;
   }
 
   header h1 {
@@ -114,22 +138,15 @@ footer {
     padding: 10px 0;
   }
 
-  nav {
-    flex-direction: column;
-    gap: 5px;
-  }
-
   .flower-dropdown,
   .festival-dropdown {
     text-align: center;
-    width: 50%;
   }
 
   .flower-dropdown-menu,
   .festival-dropdown-menu {
-    position: static;
     width: 100%;
-    margin-top: 5px;
+    margin-top: 2.5px;
     display: none;
   }
 
@@ -137,8 +154,19 @@ footer {
   .flower-dropdown:focus-within .flower-dropdown-menu,
   .festival-dropdown:hover .festival-dropdown-menu,
   .festival-dropdown:focus-within .festival-dropdown-menu {
-    display: block;
-    position: static;
     animation: fade-in 0.5s ease forwards;
+  }
+
+  .arrow-up {
+    display: block;
+    position: absolute;
+    right: 3%;
+    bottom: -3%;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 5px 11px;
+    background-color: #1f2937;
+    border: 5px outset rgba(28, 110, 164, 0.35);
+    color: #e5e7eb;
   }
 }

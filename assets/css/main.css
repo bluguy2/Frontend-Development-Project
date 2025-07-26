@@ -21,21 +21,19 @@ img {
   height: 100%;
 }
 
-p,
-a {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
+.hero-background{
+  background-color: #1f2937;
 }
 
-.header-bot-container {
-  margin: 50px 0;
+.hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
+  padding: 20px 15px;
 }
 
-.header-bot-text-content {
+.hero-text-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -43,23 +41,24 @@ a {
   gap: 20px;
 }
 
-.header-bot-text-content h2 {
+.hero-text-content h2 {
   font-size: 48px;
 }
 
-.header-bot-text-content,
+.hero-text-content,
 .subscription-wrapper a,
 .subscription h4,
 .subscription p {
   color: #e5e7eb;
 }
 
-.header-bot-text-content a {
+.hero-text-content a {
   background-color: #3882f6;
   text-align: center;
   width: 150px;
   padding: 10px;
   border-radius: 5px;
+  color: #e5e7eb;
 }
 
 main h3,
@@ -89,7 +88,7 @@ main h3 {
   width: 150px;
 }
 
-.flower-image-wrapper p {
+.flower-image-wrapper figcaption {
   text-align: center;
 }
 
@@ -141,21 +140,26 @@ main h3 {
 }
 
 @media screen and (max-width: 768px) {
-  .header-bot-container {
+  .hero {
     flex-direction: column;
   }
 
-  .header-bot-text-content {
+  .hero-text-content {
     width: 80%;
   }
 
-  .header-bot-text-content h2 {
+  .hero-text-content h2 {
     font-size: 48px;
     text-align: center;
   }
 
-  .header-bot-text-content a {
+  .hero-text-content a {
     margin: 0 auto;
+  }
+
+  .flower-images {
+    gap: 35px;
+    flex-wrap: wrap;
   }
 
   .subscription-wrapper {
