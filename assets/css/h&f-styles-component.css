@@ -126,13 +126,19 @@ footer {
   
   header { 
     padding: unset;
+    /* change this to 170px */
     height: 60px;
   }
 
   .header-top-container {
+/*     
+    flex-direction: column; */
     padding: 5px 10px;
   }
-
+/* add thi  */
+  /* nav{
+    flex-direction: column;
+  } */
   header h1 {
     text-align: center;
     padding: 10px 0;

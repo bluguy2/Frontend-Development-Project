@@ -120,10 +120,20 @@ footer {
 /* responsive */
 @media (max-width: 768px) {
   figure img {
+    width: 90%;
     max-width: 400px;
     height: auto;
     margin: 0 auto;
   }
+  
+ .main-container{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .text-two{
+  order: 1;
+ }
 
   figcaption {
     margin: 1rem 0;
