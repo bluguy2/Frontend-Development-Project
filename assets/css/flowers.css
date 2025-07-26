@@ -1,6 +1,10 @@
 @import url(./h&f-styles-component.css);
 @import url(./font-component.css);
 
+*{
+  font-family: "roboto", sans-serif;
+}
+
 /* images */
 figure img {
   max-width: 100%;
@@ -67,49 +71,32 @@ h1>a {
   font-size: 24px;
 }
 
-/* grid */
-.grid {
-  display: grid;
-  grid-template-areas:
-    "title title"
-    "text-one image-one"
-    "image-two text-two"
-    "footer footer";
-  grid-template-rows: auto 1fr 1fr auto;
-  grid-template-columns: 1fr 1fr;
+/* flexbox instead of grid */
+.main-container{
+  display: flex;
+  flex-wrap: wrap;
   gap: 40px;
   align-items: center;
 }
+ 
+.main-container h2 {
+  /* check the font-size */
+  font-size: 26px;
+  margin-top: 1rem;
+  flex-basis: 100%;
+ text-align: center;
+}
 
+.main-container > section,
+.main-container > figure {
+  flex: 1 1 45%;
+}
+
+.image-two { order: 3; }
+.text-two { order: 4; }
 main.grid {
   padding: 0 5%;
   box-sizing: border-box;
-}
-
-.grid h2 {
-  grid-area: title;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  text-shadow: 6px 5px 6px #727d8c;
-  margin: 1.2rem 0;
-}
-
-.grid .image-one {
-  grid-area: image-one;
-}
-
-.grid .text-one {
-  grid-area: text-one;
-}
-
-.grid .image-two {
-  grid-area: image-two;
-}
-
-.grid .text-two {
-  grid-area: text-two;
 }
 
 footer {
@@ -135,19 +122,6 @@ footer {
 
 /* responsive */
 @media (max-width: 768px) {
-  .grid {
-    grid-template-areas:
-      "title"
-      "image-one"
-      "text-one"
-      "image-two"
-      "text-two"
-      "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 20px;
-  }
-
   figure img {
     max-width: 400px;
     height: auto;
@@ -161,12 +135,6 @@ footer {
   p {
     max-width: 90%;
     padding: 0 1rem;
-  }
-
-  .grid .text-one,
-  .grid .text-two {
-    padding: 0 1rem;
-    margin: 1rem 0;
   }
 
   hr {
@@ -185,20 +153,13 @@ footer {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .grid {
-    padding: 0 5%;
-  }
-
   figure img {
     max-width: 450px;
   }
 }
 
 @media (min-width: 1025px) {
-  .grid {
-    padding: 0 10%;
-  }
-
+ 
   figure img {
     max-width: 500px;
   }
